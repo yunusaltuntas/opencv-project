@@ -20,7 +20,7 @@ FLANN_INDEX_KDITREE=0
 flannParam=dict(algorithm=FLANN_INDEX_KDITREE,tree=5)
 flann=cv2.FlannBasedMatcher(flannParam,{})
 
-trainImg=cv2.imread("C:/Users/yunus/Desktop/deneme1.jpg")
+trainImg=cv2.imread("C:/Users/yunus/Desktop/deneme1.jpg") #burası takip edilecek nesne resmi
 trainImg=cv2.cvtColor(trainImg,cv2.COLOR_BGR2GRAY)
 trainKP,trainDesc=detector.detectAndCompute(trainImg,None)
 
