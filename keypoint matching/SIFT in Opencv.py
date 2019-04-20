@@ -36,7 +36,7 @@ while True:
         if(m.distance<0.75*n.distance):
             goodMatch.append(m)
     if(len(goodMatch)>MIN_MATCH_COUNT):
-        tp=[]
+        tp=[]   
         qp=[]
         for m in goodMatch:
             tp.append(trainKP[m.trainIdx].pt)
