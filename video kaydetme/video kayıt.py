@@ -1,19 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 19 19:28:32 2019
-
-@author: yunus
-"""
 import numpy as np
 import cv2 as cv
 cap = cv.VideoCapture(0)
 # Define the codec and create VideoWriter object
 fourcc = cv.VideoWriter_fourcc(*'XVID')
-out = cv.VideoWriter('output.avi',fourcc, 20.0, (640,480))
+out = cv.VideoWriter('C:/Users/yunus/Desktop/video_kayıt.avi',fourcc, 20.0, (640,480))
 while(cap.isOpened()):
     ret, frame = cap.read()
     if ret==True:
-        frame = cv.flip(frame,0)
         # write the flipped frame
         out.write(frame)
         cv.imshow('frame',frame)
