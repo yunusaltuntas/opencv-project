@@ -7,7 +7,7 @@ import cv2 as cv
 import numpy as np
 def nothing(x):
     pass
-img=cv.imread("C:/Users/yunus/Desktop/indir.jpg")
+img=cv.imread("C:/Users/yunus/Desktop/uygulama resimleri/messi.jpg")
 img=cv.cvtColor(img,cv.COLOR_BGR2HSV)
 cv.namedWindow('image')
 cv.createTrackbar('aralik','image',0,255,nothing)
